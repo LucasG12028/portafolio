@@ -3,9 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    //chequeando
     <div className="App">
-      
     </div>
   );
 }
