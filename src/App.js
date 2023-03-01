@@ -1,18 +1,20 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import './App.css';
-import NavBar from "./components/NavBar/NavBar" 
-
+import Home from "./components/Home"
+import { ChakraProvider } from '@chakra-ui/react'
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Switch>
-          <Route path='/' component={NavBar}/>
-        </Switch>
-      </div>
-    </BrowserRouter>
+    <ChakraProvider>
+      <BrowserRouter>
+        <div className="App">
+          <Switch>
+            <Route path='/' component={Home} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    </ChakraProvider>
   );
 }
 
