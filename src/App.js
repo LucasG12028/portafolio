@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import './App.css';
 import Home from "./components/Home"
 import { ChakraProvider } from '@chakra-ui/react'
+import NavBar from './components/NavBar';
 
 
 function App() {

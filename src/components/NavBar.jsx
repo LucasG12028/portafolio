@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, HStack, Button } from "@chakra-ui/react";
+import { Box, Flex, HStack, Button, Text } from "@chakra-ui/react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import { DiGithubBadge } from "react-icons/di";
 import { SiLinkedin } from "react-icons/si";
@@ -9,9 +9,9 @@ import { RiSunLine } from "react-icons/ri";
 export default function NavBar() {
 
     return (
-        <HStack alignItems='center' justifyContent='space-between' margin='2%' border='2px'>
+        <HStack color='white' bg='#131419' alignItems='center' justifyContent='space-between'>
             <Flex alignItems='center'>
-                <Box ml='40px' fontSize='25px'>Lucas Iván Giménez</Box>
+                <Text as='u' ml='100px' fontSize='35px'>Lucas Iván Giménez</Text>
                 <Box ml='30px' mr='10px'> <SiLinkedin size='30px' /></Box>
                 <Box> <DiGithubBadge size='30px' /></Box>
             </Flex>
@@ -25,14 +25,14 @@ export default function NavBar() {
             </Tabs>
             <Flex alignItems='center'>
                 {/* uno y otro */}
-                <Box>
+                <Flex mr='10px'>
                     <RiMoonFill size='25px' />
                     <RiSunLine size='25px' />
-                </Box>
-                <Box>
-                    <Button ml='5px'>ES</Button>
-                    <Button ml='5px'>EN</Button>
-                </Box>
+                </Flex>
+                <Flex mr='10px'>
+                    <Box ml='5px'>ES</Box>
+                    <Box ml='5px'>EN</Box>
+                </Flex>
             </Flex>
         </HStack>
     )

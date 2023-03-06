@@ -1,12 +1,13 @@
  .color1 { color: #5a0b38; }
- .color2 { color: #c00341; }
+ .color2 { color: #64565b; }
  .color3 { color: #08c3ff; }
  .color4 { color: #0ffff8; }
  .color5 { color: #81fff8; }
 
 .App {
-  background: white;
+  background-color: #1c1c24;
   text-align: center;
+  color: white;
 }
 
 .App-logo {
@@ -21,7 +22,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1c1c24;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
